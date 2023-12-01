@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=whileLookupDna
+comment1.params=url\ searchTerm
+comment1.target=java.lang.String\ youtubeLinks(java.lang.String,\ java.lang.String)
+comment2.params=dna\ startIndex\ stopCodon
+comment2.target=int\ findStopCodon(java.lang.String,\ int,\ java.lang.String)
+comment3.params=dna
+comment3.target=java.lang.String\ whileLookupDna(java.lang.String)
+comment4.params=
+comment4.target=void\ testYoutubeLinks()
+comment5.params=
+comment5.target=void\ testWhileLookupDna()
+comment6.params=dna
+comment6.target=java.lang.String\ firstGeneMultipleStopCodons(java.lang.String)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

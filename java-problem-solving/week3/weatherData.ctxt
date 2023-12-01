@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=weatherData
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=parser
+comment10.target=org.apache.commons.csv.CSVRecord\ coldestInDay(org.apache.commons.csv.CSVParser)
+comment11.params=parser\ columnHeader
+comment11.target=double\ averageInFIle(org.apache.commons.csv.CSVParser,\ java.lang.String)
+comment12.params=parser\ humidLimit
+comment12.target=double\ averageTemperatureWithHighHumidityInFile(org.apache.commons.csv.CSVParser,\ int)
+comment2.params=parser
+comment2.target=org.apache.commons.csv.CSVRecord\ lowestHumidityInFile(org.apache.commons.csv.CSVParser)
+comment3.params=currentRecord\ largestSoFar\ columnHeader
+comment3.target=org.apache.commons.csv.CSVRecord\ getLargestOfTwo(org.apache.commons.csv.CSVRecord,\ org.apache.commons.csv.CSVRecord,\ java.lang.String)
+comment4.params=currentRecord\ smallestSoFar\ columnHeader
+comment4.target=org.apache.commons.csv.CSVRecord\ getSmallestOfTwo(org.apache.commons.csv.CSVRecord,\ org.apache.commons.csv.CSVRecord,\ java.lang.String)
+comment5.params=
+comment5.target=void\ hottestInManyDays()
+comment6.params=parser
+comment6.target=void\ printAllTemp(org.apache.commons.csv.CSVParser)
+comment7.params=
+comment7.target=void\ coldestInManyDays()
+comment8.params=
+comment8.target=void\ lowestHumidityInManyFiles()
+comment9.params=parser
+comment9.target=org.apache.commons.csv.CSVRecord\ hottestInDay(org.apache.commons.csv.CSVParser)
+numComments=13

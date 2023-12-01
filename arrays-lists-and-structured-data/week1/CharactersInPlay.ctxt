@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CharactersInPlay
+comment1.params=
+comment1.target=CharactersInPlay()
+comment2.params=
+comment2.target=void\ testing()
+comment3.params=min\ max
+comment3.target=void\ charactersWithNumParts(int,\ int)
+comment4.params=
+comment4.target=void\ countCharsInPlay()
+comment5.params=input
+comment5.target=java.lang.String\ stringBeforeDot(java.lang.String)
+numComments=6

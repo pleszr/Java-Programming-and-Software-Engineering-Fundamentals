@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Part3
+comment0.text=\n\ Write\ a\ description\ of\ Part2\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=dna\ startChar\ endChar
+comment1.target=boolean\ isGeneInDna(java.lang.String,\ int,\ int)
+comment2.params=dna
+comment2.target=java.lang.String\ findSimpleGene(java.lang.String)
+comment3.params=searchString\ searchTerm
+comment3.target=boolean\ twoOccurrences(java.lang.String,\ java.lang.String)
+comment4.params=searchString\ searchTerm
+comment4.target=java.lang.String\ lastPart(java.lang.String,\ java.lang.String)
+comment5.params=
+comment5.target=void\ testSimpleGene()
+comment6.params=
+comment6.target=void\ testLastPart()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

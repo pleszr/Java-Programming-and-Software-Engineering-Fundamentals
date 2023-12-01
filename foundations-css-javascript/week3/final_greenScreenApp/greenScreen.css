@@ -1,0 +1,12 @@
+
+canvas {
+    width: 320pt;
+    height:180pt;
+    margin:10pt;
+    border: 1px solid black;
+  }
+  
+  body {
+    background-color:#F0DDB4;
+  }
+  

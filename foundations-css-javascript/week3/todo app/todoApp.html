@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Exercise</title>
+    <link rel="stylesheet" type="text/css" href="todoApp.css">
+
+    <script type="text/javascript" src="todoApp.js"></script>
+
+</head>
+<body>
+
+<h1 id="myHeader">TO DO List</h1>
+
+<!-- STEPs 1 and 2 below here  -->
+    
+<input type = "button" value = "Add" onclick = "addTask()" id= "addButton">
+
+<input type = "text" id="input" placeholder="Enter text...">
+
+
+<hr>
+    
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+    make todo list
+  </li>
+  
+    </ul>
+<hr>
+<!-- STEPs 8 and 9 below here  -->
+ <div id = "divAbout" > 
+</div>
+<input type = "button" value = "About" onclick = "doAbout()">
+   
+    
+ <!-- STEP 13 below here  -->
+<input type = "button" value = "Clear" onclick = "clearAbout(this.parentNode)">
+
+</html>
+</head>    

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Part4
+comment1.params=url\ searchTerm
+comment1.target=java.lang.String\ youtubeLinks(java.lang.String,\ java.lang.String)
+comment2.params=dna\ startChar\ endChar
+comment2.target=boolean\ isGeneInDna(java.lang.String,\ int,\ int)
+comment3.params=dna
+comment3.target=java.lang.String\ findSimpleGene(java.lang.String)
+comment4.params=searchString\ searchTerm
+comment4.target=boolean\ twoOccurrences(java.lang.String,\ java.lang.String)
+comment5.params=searchString\ searchTerm
+comment5.target=java.lang.String\ lastPart(java.lang.String,\ java.lang.String)
+comment6.params=
+comment6.target=void\ testSimpleGene()
+comment7.params=
+comment7.target=void\ testLastPart()
+comment8.params=
+comment8.target=void\ testYoutubeLinks()
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10

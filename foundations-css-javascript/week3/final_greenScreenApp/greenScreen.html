@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Exercise</title>
+    <link rel="stylesheet" type="text/css" href="greenScreen.css">
+
+    <script type="text/javascript" src="greenScreen.js"></script>
+    <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+</head>
+<body>
+
+
+<h1>Green screen web page</h1>
+
+<canvas id = "forgroundCanvas">
+</canvas>
+<canvas id = "backgroundCanvas">
+</canvas>
+<canvas id = "composedImageCanvas">
+</canvas>
+
+
+
+<p>
+   Foreground
+  <input type = "file" multiple = "false" accept = "image/*" id = "foreground" onchange = "upload(id,'forgroundCanvas')">
+</p>
+<p>
+   Background
+  <input type = "file" multiple = "false" accept = "image/*" id = "background" onchange = "upload(id,'backgroundCanvas')">
+</p>
+
+<p>
+  <input type = "button" onclick= "makeGrayscale('composedImageCanvas')" value = "Make grayscale">
+  <input type = "button" onclick= "makeComposite()" value = "Make composite">
+</p>
+</body>  
+</html>

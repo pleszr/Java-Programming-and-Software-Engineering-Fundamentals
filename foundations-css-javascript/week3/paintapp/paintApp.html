@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Exercise</title>
+    <link rel="stylesheet" type="text/css" href="paintApp.css">
+
+    <script type="text/javascript" src="paintApp.js"></script>
+
+</head>
+<body>
+<h1>Paint Your Own Picture</h1>
+<p>
+    Set width <input type = "text" id="canvasWidth" onchange="setWidth(value)">
+    Set height <input type = "text" id="canvasHeight" onchange="setHeight(value)">
+</p>
+<br>
+<canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX,event.offsetY)" onmouseup="endPaint()"> </canvas>
+<br>
+<p>
+  Brush color 
+  <input type="color" id="brushColor" oninput="changeColor(value)">
+  Brush size
+  <input type = "range" min = "5" max = "100" oninput="changeRadius(value)">
+  <output id = "brushSize">50</output>
+</p>
+<input type="button" id="clearCanvas" onclick="clearCanvas()" value="Clear Canvas">
+</body>  
+</html>
+  

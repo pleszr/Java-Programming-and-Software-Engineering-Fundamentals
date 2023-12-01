@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Exercise</title>
+    <link rel="stylesheet" type="text/css" href="filterFun.css">
+
+    <script type="text/javascript" src="filterFun.js"></script>
+    <script src = "dukeSimpleImage.js"></script>
+
+</head>
+<body>
+
+<script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<h1>Filter fun</h1>
+
+<canvas id = "can1">
+</canvas>
+
+<h2>
+  Load Image
+</h2>
+<p>
+  <input type = "file" multiple = "false" accept = "image/*" id = "fileInput" onchange = "upload()">  
+</p>
+<h2>
+  Select Filter
+</h2>
+<p>   
+  <input type = "button" onclick= "makeGray()" value = "Grayscale">
+  <input type = "button" onclick= "makeRed()" value = "Red">
+  <input type = "button" onclick= "makeWindow(4,2)" value = "Window">
+</p>
+<p>
+  <input type = "button" onclick= "resetImage()" value = "Reset Image">
+</p>
+</body>  
+</html>

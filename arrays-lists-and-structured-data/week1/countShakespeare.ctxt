@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=countShakespeare
+comment1.params=
+comment1.target=char[]\ getAbc()
+comment2.params=input
+comment2.target=int[]\ countAbcInString(java.lang.String)
+comment3.params=
+comment3.target=void\ testAbc()
+comment4.params=intarray
+comment4.target=int\ findHighestInt(int[])
+comment5.params=letter\ word
+comment5.target=int\ countCharInString(char,\ java.lang.String)
+comment6.params=
+comment6.target=void\ countShakespeare()
+comment7.params=fr\ common\ counts
+comment7.target=void\ countWords(edu.duke.FileResource,\ java.lang.String[],\ int[])
+comment8.params=searchArray\ searchString
+comment8.target=int\ indexOf(java.lang.String[],\ java.lang.String)
+comment9.params=
+comment9.target=java.lang.String[]\ getCommon()
+numComments=10

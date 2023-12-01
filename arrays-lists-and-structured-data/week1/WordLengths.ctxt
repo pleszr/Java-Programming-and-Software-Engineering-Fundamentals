@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=WordLengths
+comment1.params=size
+comment1.target=int[]\ getLNumbers(int)
+comment2.params=inputCh
+comment2.target=boolean\ isLetter(char)
+comment3.params=
+comment3.target=void\ WordLenghts()
+numComments=4
