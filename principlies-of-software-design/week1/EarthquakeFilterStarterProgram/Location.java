@@ -127,8 +127,8 @@ public class Location  {
     }
     
     public Location(double latitude, double longitude){
-        mLatitude = latitude;
-        mLongitude = longitude;
+    	mLatitude = latitude;
+    	mLongitude = longitude;
     }
 
     /**
