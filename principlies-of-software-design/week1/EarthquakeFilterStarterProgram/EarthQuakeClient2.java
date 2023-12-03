@@ -20,15 +20,53 @@ public class EarthQuakeClient2 {
     public void quakesWithFilter() { 
         EarthQuakeParser parser = new EarthQuakeParser(); 
         //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
-        String source = "data/nov20quakedatasmall.atom";
+        String source = "data/nov20quakedata.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);         
         System.out.println("read data for "+list.size()+" quakes");
+        
+        Location tokyo = new Location(35.42, 139.43);
+        
+        //4 between 5 and 6
+        MatchAllFilter maf = new MatchAllFilter();
+        //maf.addFilter(new MagnitudeFilter(0.0,2.0));
+        maf.addFilter(new DistanceFilter(tokyo,10000));
+        //maf.addFilter(new DepthFilter(-100000.0,-10000.0));
+        maf.addFilter(new PhraseFilter("Japan","any")); 
+        ArrayList<QuakeEntry> filteredByAll  = filter(list, maf); 
+        System.out.println("Filtered down to: " + filteredByAll.size() + " records.");
 
-        Filter f = new MinMagFilter(4.0); 
-        ArrayList<QuakeEntry> m7  = filter(list, f); 
-        for (QuakeEntry qe: m7) { 
+        
+        for (QuakeEntry qe: filteredByAll) { 
             System.out.println(qe);
         } 
+    }
+    
+    public void testMatchAllFilter2() { 
+        EarthQuakeParser parser = new EarthQuakeParser(); 
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        String source = "data/nov20quakedata.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);         
+        System.out.println("read data for "+list.size()+" quakes");
+        
+        
+        Location tulsa = new Location(36.1314, -95.9372);
+        Location denver = new Location(39.7392, -104.9903);
+        Location billund = new Location(55.7308, 9.1153);
+        
+        MatchAllFilter maf = new MatchAllFilter();
+        maf.addFilter(new MagnitudeFilter(0.0,5.0));
+        //maf.addFilter(new DepthFilter(-180000.0,-30000.0));
+        maf.addFilter(new DistanceFilter(billund,3000));
+        maf.addFilter(new PhraseFilter("e","any")); 
+        ArrayList<QuakeEntry> filteredByAll  = filter(list, maf); 
+        System.out.println(maf.getName());
+        System.out.println("Filtered down to: " + filteredByAll.size() + " records.");
+
+
+        
+        //for (QuakeEntry qe: filteredByAll) { 
+        //    System.out.println(qe);
+        //} 
     }
 
     public void createCSV() {

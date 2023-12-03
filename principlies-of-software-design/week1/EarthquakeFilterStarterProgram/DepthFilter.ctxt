@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=DepthFilter
+comment0.text=\n\ Write\ a\ description\ of\ DepthFilter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=min\ max
+comment1.target=DepthFilter(double,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=qe
+comment3.target=boolean\ satisfies(QuakeEntry)
+numComments=4

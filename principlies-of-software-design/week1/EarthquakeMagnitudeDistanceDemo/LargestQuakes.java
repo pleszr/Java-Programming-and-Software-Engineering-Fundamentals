@@ -23,7 +23,7 @@ public class LargestQuakes {
         ArrayList<QuakeEntry> list = parser.read(source);
         System.out.println("read data for " + list.size() + " quakes");
         
-        ArrayList<QuakeEntry> largestList = getLargest(list,5);
+        ArrayList<QuakeEntry> largestList = getLargest(list,50);
         System.out.println("Found " + largestList.size() + " quakes");
         printQuakeList(largestList);
         
