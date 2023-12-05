@@ -16,6 +16,72 @@ public class EarthQuakeClient2 {
         
         return answer;
     } 
+    
+    public ArrayList<QuakeEntry> sortByMagnWCopy(ArrayList<QuakeEntry> quakeData) {
+        ArrayList<QuakeEntry> copy = quakeData;
+        ArrayList<QuakeEntry> sorted = new ArrayList<QuakeEntry>();
+        while ( !copy.isEmpty() ) {
+            QuakeEntry tempQe = findSmallestMgn(copy);
+            copy.remove(tempQe);
+            sorted.add(tempQe);
+        }
+        return sorted;
+    }
+    
+    public ArrayList<QuakeEntry> sortByMagn(ArrayList<QuakeEntry> quakeData) {
+        
+        for ( int i = 0; i < quakeData.size(); i++) {
+            int minInd = getSmallestMgnInd(quakeData,i); 
+            QuakeEntry tempQe = quakeData.get(i);
+            quakeData.set(i,quakeData.get(minInd));
+            quakeData.set(minInd,tempQe);
+        }
+        
+        return quakeData;
+    }
+    
+    
+    
+    public QuakeEntry findSmallestMgn(ArrayList<QuakeEntry> quakeData) {
+        double smallestSoFar = Double.MAX_VALUE;
+        QuakeEntry smallest = null;
+        for ( QuakeEntry qe: quakeData ) {
+            double mgn = qe.getMagnitude();
+            if ( smallestSoFar > mgn ) {
+                smallestSoFar = mgn;
+                smallest = qe;
+            } 
+        }
+        return smallest;
+    }
+    
+    public int getSmallestMgnInd(ArrayList<QuakeEntry> quakeData, int from) {
+        double smallestSoFar = Double.MAX_VALUE;
+        int minInd = from;
+        for ( int i = from; i < quakeData.size(); i++) {
+            double mgn = quakeData.get(i).getMagnitude();
+            if ( smallestSoFar > mgn ) {
+                smallestSoFar = mgn;
+                minInd = i;
+            } 
+        }
+        return minInd;
+    }
+    
+    public void testSorting() {
+        EarthQuakeParser parser = new EarthQuakeParser(); 
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        String source = "data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);         
+        System.out.println("read data for "+list.size()+" quakes");  
+        
+        
+        
+        list = sortByMagn(list);
+        for (QuakeEntry qe: list) { 
+            System.out.println(qe);
+        } 
+    }
 
     public void quakesWithFilter() { 
         EarthQuakeParser parser = new EarthQuakeParser(); 

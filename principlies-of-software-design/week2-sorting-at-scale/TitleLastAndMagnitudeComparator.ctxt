@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=TitleLastAndMagnitudeComparator
+comment1.params=input
+comment1.target=java.lang.String\ findLastWord(java.lang.String)
+comment1.text=\n\ Write\ the\ TitleLastAndMagnitudeComparator\ class\ that\ implements\ a\ Comparator\ of\ type\ QuakeEntry.\ In\ this\ class\ you\ should\n\ write\ the\ compare\ method\ that\ has\ two\ parameters,\ a\ QuakeEntry\ named\ q1\ and\ a\ QuakeEntry\ named\ q2.\ This\ method\ should\ \n\ compare\ the\ last\ word\ in\ the\ title\ of\ q1\ and\ q2.\ If\ q1\u2019s\ last\ word\ comes\ before\ q2\u2019s\ last\ word\ in\ alphabetical\ order,\ \n\ then\ this\ method\ should\ return\ a\ negative\ integer.\ If\ q1\u2019s\ last\ word\ comes\ after\ q2\u2019s\ last\ word,\ then\ this\ method\ should\n\ return\ a\ positive\ integer.\ If\ q1\u2019s\ last\ word\ is\ the\ same\ as\ q2\u2019s\ last\ word,\ then\ this\ method\ should\ compare\ the\ magnitude\n\ of\ the\ two\ earthquakes.\ If\ q1\u2019s\ magnitude\ is\ less\ than\ q2\u2019s\ magnitude,\ then\ this\ method\ should\ return\ a\ negative\ number.\ \n\ If\ q1\u2019s\ magnitude\ is\ greater\ than\ q2\u2019s\ magnitude,\ then\ this\ method\ should\ return\ a\ positive\ integer.\ Otherwise,\ this\ \n\ method\ should\ return\ 0.\n
+comment2.params=q1\ q2
+comment2.target=int\ compare(QuakeEntry,\ QuakeEntry)
+numComments=3

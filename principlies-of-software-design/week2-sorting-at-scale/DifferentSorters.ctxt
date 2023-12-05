@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=DifferentSorters
+comment1.params=
+comment1.target=void\ firstExercise()
+comment2.params=
+comment2.target=void\ sortWithCompareTo()
+comment3.params=
+comment3.target=void\ sortByLastWordInTitleThenByMagnitude()
+comment4.params=
+comment4.target=void\ sortByTitleAndDepth()
+comment5.params=
+comment5.target=void\ sortByMagnitude()
+comment6.params=
+comment6.target=void\ sortByDistance()
+numComments=7
