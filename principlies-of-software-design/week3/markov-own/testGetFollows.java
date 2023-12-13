@@ -18,10 +18,10 @@ public class testGetFollows {
          * characters that follow “t”. You should get 11548. 
          */
         
-        FileResource fr = new FileResource("data/melville.txt");
+        FileResource fr = new FileResource("data/confucius.txt");
         MarkovOne m1 = new MarkovOne(fr.asString());
-        ArrayList<String> follows = m1.getFollows("th");
-        System.out.println("Size of follows for latter t is: " + follows.size());
+        ArrayList<String> follows = m1.getFollows("he");
+        System.out.println("Size of follows for latter o is: " + follows.size());
         
         
         

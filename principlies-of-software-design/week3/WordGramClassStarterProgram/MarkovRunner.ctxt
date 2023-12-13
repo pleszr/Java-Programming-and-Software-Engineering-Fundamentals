@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MarkovRunner
+comment1.params=markov\ text\ size
+comment1.target=void\ runModel(IMarkovModel,\ java.lang.String,\ int)
+comment2.params=markov\ text\ size\ seed
+comment2.target=void\ runModel(IMarkovModel,\ java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=void\ testGetFollows()
+comment4.params=
+comment4.target=void\ testIndexOf()
+comment5.params=
+comment5.target=void\ runMarkovWorld()
+comment6.params=
+comment6.target=void\ FinalQuiz()
+comment7.params=
+comment7.target=void\ PractiveQuiz()
+comment8.params=s
+comment8.target=void\ printOut(java.lang.String)
+numComments=9

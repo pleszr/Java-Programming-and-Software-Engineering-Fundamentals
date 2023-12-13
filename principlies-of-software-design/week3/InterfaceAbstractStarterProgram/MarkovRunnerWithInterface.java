@@ -20,6 +20,26 @@ public class MarkovRunnerWithInterface {
         }
     }
     
+    public void runMarkovWordTwo() {
+        FileResource fr = new FileResource("data/confucius.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        int size = 120;
+        int currRandom = 832;  
+        MarkovWordTwo mw2 = new MarkovWordTwo();
+        runModel(mw2, st, size,currRandom);    
+    }
+    
+    public void runMarkovWordOne() {
+        FileResource fr = new FileResource("data/confucius.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        int size = 120;
+        int currRandom = 139;  
+        MarkovWordOne mw1 = new MarkovWordOne();
+        runModel(mw1, st, size,currRandom);
+    }
+    
     public void runMarkovExercise() {
         //exercise 3
         System.out.println("Exercise 3:");
