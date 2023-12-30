@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MovieRunnerAverage
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment2.params=
+comment2.target=void\ testGetAverageRatingOneMovie()
+comment3.params=movieTitle
+comment3.target=void\ getAverageRatingOneMovie(java.lang.String)
+comment4.params=movies
+comment4.target=void\ printMovieMap(java.util.HashMap)
+numComments=5

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Rater
+comment1.params=id
+comment1.target=Rater(java.lang.String)
+comment10.params=
+comment10.target=java.util.ArrayList\ getItemsRated()
+comment2.params=
+comment2.target=java.util.ArrayList\ getListOfRatedMovies()
+comment3.params=
+comment3.target=void\ printAllRatings()
+comment4.params=item\ rating
+comment4.target=void\ addRating(java.lang.String,\ double)
+comment5.params=item
+comment5.target=boolean\ hasRating(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getID()
+comment7.params=item
+comment7.target=double\ getRating(java.lang.String)
+comment8.params=
+comment8.target=int\ numRatings()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=11
