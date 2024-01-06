@@ -1,4 +1,4 @@
-// An immutable passive data object (PDO) to represent the rating data
+    // An immutable passive data object (PDO) to represent the rating data
 public class Rating implements Comparable<Rating> {
     private String item;
     private double value;
@@ -26,7 +26,6 @@ public class Rating implements Comparable<Rating> {
     public int compareTo(Rating other) {
         if (value < other.value) return -1;
         if (value > other.value) return 1;
-        
         return 0;
     }
 }

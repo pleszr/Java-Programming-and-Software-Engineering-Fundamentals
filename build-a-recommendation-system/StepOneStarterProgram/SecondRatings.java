@@ -27,14 +27,14 @@ public class SecondRatings {
         int movieCount = 0;
         double avgRtg = 0.0;
         
-        for ( int i=0; i<myRaters.size(); i++ ) {
-                Rater currRater = myRaters.get(i);
-                double currMveRtg = currRater.getRating(movieId);
-                if ( currMveRtg != -1 ) {
-                    movieCount++;
-                    avgRtg += currMveRtg;
-                }
-        } 
+        // for ( int i=0; i<myRaters.size(); i++ ) {
+                // Rater currRater = myRaters.get(i);
+                // double currMveRtg = currRater.getRating(movieId);
+                // if ( currMveRtg != -1 ) {
+                    // movieCount++;
+                    // avgRtg += currMveRtg;
+                // }
+        // } 
         
         if ( movieCount <= minimalRaters ) {
             return 0.0;

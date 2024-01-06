@@ -143,7 +143,7 @@ public class FirstRatings {
             int raterInd = findIdRaterInList(importedRaters, raterId);
             //if not found in list, create new Rater
             if ( raterInd == -1 ) {
-                currRater = new Rater(raterId);
+                currRater = new EfficientRater(raterId);
                 importedRaters.add(currRater);
             }
             //if rater is found, set currRater to found rater
