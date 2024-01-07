@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ThirdRatings
+comment1.params=
+comment1.target=ThirdRatings()
+comment2.params=movieId\ minimalRaters
+comment2.target=double\ getAverageByID(java.lang.String,\ int)
+comment3.params=minimalRaters\ filterCriteria
+comment3.target=java.util.ArrayList\ getAverageRatingsByFilter(int,\ Filter)
+comment4.params=moviesById
+comment4.target=java.util.HashMap\ convMovieIdToTitle(java.util.HashMap)
+comment5.params=movies
+comment5.target=java.util.LinkedHashMap\ orderByRatings(java.util.HashMap)
+comment6.params=o1\ o2
+comment6.target=int\ compare(java.util.Map.Entry,\ java.util.Map.Entry)
+comment7.params=ratingsFile
+comment7.target=ThirdRatings(java.lang.String)
+comment8.params=
+comment8.target=int\ getRaterSize()
+numComments=9
