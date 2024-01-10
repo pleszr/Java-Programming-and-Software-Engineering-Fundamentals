@@ -20,7 +20,7 @@ public class FourthRatings {
                 //check if that rater has rating for movie 
                 if ( currRater.hasRating(movieId) ) {
                     //if it has rating then save rating
-                    double currMveRtg = currRater.getRating(movieId).getValue();
+                    double currMveRtg = currRater.getRating(movieId);
                     //increase counter
                     movieCount++;
                     //increase sumrating
@@ -70,8 +70,8 @@ public class FourthRatings {
             // Check if both raters have rated the movie
             if (me.hasRating(movieId) && r.hasRating(movieId)) {
                 // Get the ratings for the current movie from both raters and adjust them to the -5 to 5 scale
-                double meRating = me.getRating(movieId).getValue() - 5;
-                double rRating = r.getRating(movieId).getValue() - 5;
+                double meRating = me.getRating(movieId) - 5;
+                double rRating = r.getRating(movieId) - 5;
     
                 // Add the product of the two ratings to the dot product sum
                 dotRating += meRating * rRating;
@@ -154,13 +154,13 @@ public class FourthRatings {
                 if (currRater.hasRating(movie)) {
                     raterCounter++; //Update counter to use with minimalRaters
                     // Calculate sum and multiply with weight  to use in calculating weighted avg
-                    sumMovieRtg += currRater.getRating(movie).getValue() * currWeight;
+                    sumMovieRtg += currRater.getRating(movie) * currWeight;
                     // increase weight to use in avg calculation
                 }
             }
     
             // If enough raters have rated the movie, calculate the average rating
-            if ( sumMovieRtg != 0.0 && raterCounter >= minimalRaters) {
+            if ( raterCounter != 0 && raterCounter >= minimalRaters) {
                 double avgMovieRtg = sumMovieRtg / raterCounter;
                 result.add(new Rating(movie, avgMovieRtg));
             }

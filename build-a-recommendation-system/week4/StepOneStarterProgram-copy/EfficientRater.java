@@ -46,15 +46,15 @@ public class EfficientRater implements Rater {
         return myID;
     }
 
-    public Rating getRating(String item) {
+    public double getRating(String item) {
         //looks up the value from the hashmap
         if ( myRatings.containsKey(item) ) {
             //returns the rating if found
-            return myRatings.get(item);
+            return myRatings.get(item).getValue();
         }
         else {
             //returns null if not found
-            return null;
+            return -1;
         }
     }
 

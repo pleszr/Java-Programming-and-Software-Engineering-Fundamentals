@@ -12,7 +12,7 @@ public interface Rater {
     public void addRating(String item, double rating);
     public boolean hasRating(String item);
     public String getID();
-    public Rating getRating(String item);
+    public double getRating(String item);
     public int numRatings();
     public String toString();
     //public ArrayList<String> getItemsRated();

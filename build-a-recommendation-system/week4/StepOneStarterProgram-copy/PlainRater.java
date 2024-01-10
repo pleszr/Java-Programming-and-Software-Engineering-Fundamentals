@@ -49,14 +49,14 @@ public class PlainRater implements Rater {
         return myID;
     }
 
-    public Rating getRating(String item) {
+    public double getRating(String item) {
         Rating r = null;
         for(int k=0; k < myRatings.size(); k++){
             if (myRatings.get(k).getItem().equals(item)){
-                return myRatings.get(k);
+                return myRatings.get(k).getValue();
             }
         }
-        return null;
+        return -1;
     }
 
     public int numRatings() {

@@ -4,4 +4,6 @@ comment1.params=
 comment1.target=java.util.ArrayList\ getItemsToRate()
 comment2.params=webRaterID
 comment2.target=void\ printRecommendationsFor(java.lang.String)
-numComments=3
+comment3.params=result
+comment3.target=void\ printTable(java.util.ArrayList)
+numComments=4
